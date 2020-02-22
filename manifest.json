@@ -1,0 +1,20 @@
+{
+  "content_scripts": [
+    {
+      "js": [ "js/hack.js" ],
+      "matches": [ "*://*.bimibimi.tv/*" ],
+      "run_at": "document_start"
+    }
+  ],
+  "description": "Hack bimibimi to use dev tools",
+  "icons": {
+    "32": "images/logo32.png",
+    "48": "images/logo48.png",
+    "128": "images/logo128.png"
+  },
+  "manifest_version": 2,
+  "permissions": [ "cookies", "notifications", "*://*.bimibimi.tv/", "activeTab", "contextMenus", "storage" ],
+  "name": "Hack bimibimi",
+  "author": "acgotaku",
+  "version": "0.0.1"
+}
